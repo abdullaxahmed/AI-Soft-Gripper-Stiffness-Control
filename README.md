@@ -10,7 +10,7 @@ This section outlines the hardware design and integration of the AI-based soft g
 
 ### Experimental Setup
 
-The experimental platform includes a soft gripper mounted on a linear positioning system with a lead screw mechanism driven by stepper motors. The base and Z-axis stage are reinforced using aluminum extrusions and laser-cut acrylic to ensure mechanical stability and minimize sensor interference during testing. The system designed for repeatable, stable trials during data collection and model validation.*
+The experimental platform includes a soft gripper mounted on a linear positioning system with a lead screw mechanism driven by stepper motors. The base and Z-axis stage are reinforced using aluminum extrusions and laser-cut acrylic to ensure mechanical stability and minimize sensor interference during testing. The system designed for repeatable, stable trials during data collection and model validation.
 
 <p align="center">
   <img src="images/Setup.PNG" width="700"/>
@@ -52,13 +52,13 @@ A force estimation model was implemented to calculate the applied grasping force
 <p align="center">
   <img src="images/Sample FEA.svg" width="800"/>
   <br/><br/>
-  <span style="font-size: 18px;"><em>FEA Compression Test</em></span>
+  <span style="font-size: 17px;"><em>FEA Compression Test</em></span>
 </p>
 
 <p align="center">
   <img src="images/Sample Compression Test.png" width="500"/>
   <br/><br/>
-  <span style="font-size: 18px;"><em>Experimental Compression Test</em></span>
+  <span style="font-size: 17px;"><em>Experimental Compression Test</em></span>
 </p>
 
 
