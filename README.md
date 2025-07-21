@@ -10,9 +10,7 @@ This section outlines the hardware design and integration of the AI-based soft g
 
 ### Experimental Setup
 
-The experimental platform includes a soft gripper mounted on a linear positioning system with a lead screw mechanism driven by stepper motors. The base and Z-axis stage are reinforced using aluminum extrusions and laser-cut acrylic to ensure mechanical stability and minimize sensor interference during testing.
-
-> *Designed for repeatable, stable trials during data collection and model validation.*
+The experimental platform includes a soft gripper mounted on a linear positioning system with a lead screw mechanism driven by stepper motors. The base and Z-axis stage are reinforced using aluminum extrusions and laser-cut acrylic to ensure mechanical stability and minimize sensor interference during testing. The system designed for repeatable, stable trials during data collection and model validation.*
 
 <p align="center">
   <img src="images/Setup.PNG" width="700"/>
@@ -21,7 +19,7 @@ The experimental platform includes a soft gripper mounted on a linear positionin
 
 ### Soft Pneumatic Actuator with Integrated Sensors
 
-The soft gripper uses DragonSkin 20-based PneuNet bending actuators with embedded bending and force sensors. These actuators are cast using 3D-printed molds with pre-positioned sensors, ensuring proper alignment and consistent performance across trials.
+The soft gripper uses DragonSkin 20-based PneuNet bending actuators with embedded bending and force sensors. These actuators are cast using 3D-printed molds with pre-positioned sensors.
 
 <p align="center">
   <img src="images/SPA Top View.png" width="300"/>
@@ -45,4 +43,23 @@ The system is powered and controlled via a modular electronics setup, consisting
 </p>
 
 ---
+
+
+##  Force Estimation
+
+A force estimation model was implemented to calculate the applied grasping force based on bending and PWM input. The model was constructed using simulation data from an FEA compression test and validated with a real-world physical compression setup. This reference data was used to map bending behavior and actuation effort to estimated contact force during grasping.
+
+<p align="center">
+  <img src="images/Sample FEA.svg" width="800"/>
+  <br/><br/>
+  <span style="font-size: 18px;"><em>FEA Compression Test</em></span>
+</p>
+
+<p align="center">
+  <img src="images/Sample Compression Test.png" width="500"/>
+  <br/><br/>
+  <span style="font-size: 18px;"><em>Experimental Compression Test</em></span>
+</p>
+
+
 
