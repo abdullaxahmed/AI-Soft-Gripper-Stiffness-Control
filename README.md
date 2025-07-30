@@ -61,5 +61,29 @@ A force estimation model was implemented to calculate the applied grasping force
   <span style="font-size: 17px;"><em>Experimental Compression Test</em></span>
 </p>
 
+## Grasping Demonstrations
+
+These demonstrations illustrate key behaviors of the soft gripper during real-time operation, highlighting the system’s ability to control applied force and react to interaction changes.
+
+### Rubber Ball Grasp
+
+<figure align="center">
+  <video src="https://github.com/user-attachments/assets/eb575767-f340-4f48-975d-2018184d0953" controls width="640"></video>
+  <figcaption align="center"><em>Grasping a soft rubber ball using real-time force estimation</em></figcaption>
+</figure>
+
+This test shows the soft gripper grasping a rubber ball, with force feedback used to modulate actuation effort. The system tracks bending and force in real-time, stopping when the AI controller predicts that the desired grasp force has been reached.
+
+---
+
+### TPU Test Sample with Mid-Grasp Release
+
+<figure align="center">
+  <video src="https://github.com/user-attachments/assets/93ee13b8-a354-4ce3-8f1d-8a37d4ca2307" controls width="640"></video>
+  <figcaption align="center"><em>Grasping a TPU sample and responding to object removal mid-grasp</em></figcaption>
+</figure>
+
+In this demo, the gripper begins to grasp a rigid sample. Midway through, the object is manually removed to simulate unexpected release. The system detects the loss of contact through a sudden drop in estimated force, automatically stops actuation, and enters a safe state as indicated by the red system status.
+
 
 
